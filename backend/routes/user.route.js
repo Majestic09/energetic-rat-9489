@@ -49,7 +49,7 @@ userRouter.post("/login", async (req, res) => {
         const user = await userModel.find({ email });
         console.log(user);
         if (user.length > 0) {
-            bcrypt.compare(password, user[0]._id, (err, result) => {
+            bcrypt.compare(password, user[0].password, (err, result) => {
                 console.log(password);
                 if (result) {
                     console.log(result,'**');
