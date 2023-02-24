@@ -22,10 +22,11 @@
     margin-top: 20px;
 }
 #signupBtn{
-    width: 40%;
+    width: 60%;
     height: 40px;
     margin-top: 20px;
     border: 1px solid grey;
     text-align: center;
     padding: 10px;
+    color: white;
 }
